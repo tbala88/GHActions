@@ -1,0 +1,14 @@
+name: Simple Go Build
+ 
+on: workflow-dispatch
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Go version
+      uses: actions/setup-go@v2
+      with:
+        go-version: '1.15.1'
+    - run: go run helloworld.go
