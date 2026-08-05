@@ -1,0 +1,13 @@
+name: "Understanding Events"
+on: 
+    workflow_dispatch:
+    push:
+    pull_request:
+    schedule:
+        - cron: "*/7 * * * *"
+jobs:
+    event-info-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Trigger Event
+              run: echo "My Trigger is ${{ github.event_name }} event"
