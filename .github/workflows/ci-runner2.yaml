@@ -1,0 +1,28 @@
+name: 04 - Understanding Runners (Win + Ubuntu)
+
+on: push
+
+jobs:
+  ubuntu-runner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Ubuntu Runner Details
+        run: |
+          echo "Workflow is executing on a GitHub-hosted Ubuntu runner."
+          echo "Runner Name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner Architecture: $RUNNER_ARCH"
+
+  windows-runner:
+    runs-on: windows-latest
+
+    steps:
+      - name: Print Windows Runner Details
+        shell: bash
+
+        run: |
+          echo "Workflow is executing on a GitHub-hosted Windows runner."
+          echo "Runner Name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner Architecture: $RUNNER_ARCH"
