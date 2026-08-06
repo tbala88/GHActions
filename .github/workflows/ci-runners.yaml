@@ -1,6 +1,8 @@
 name: 03 - Understanding Runners
 
-on: push
+#on: push
+on:
+    workflow_dispatch:
 
 jobs:
   runner-info:
