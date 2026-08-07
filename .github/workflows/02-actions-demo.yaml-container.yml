@@ -22,10 +22,10 @@ jobs:
         with:
           context: .
           push: true
-          tags: cloudwithvarjosh/cwvj-flask-app:v1.0.1
+          tags: balacptc/bala-flask-app:v1.0.1
 
       - name: Run Container
-        run: docker run -d -p 5000:5000 --name cwvj-flask-container cloudwithvarjosh/cwvj-flask-app:v1.0.1
+        run: docker run -d -p 5000:5000 --name bala-flask-container balacptc/bala-flask-app:v1.0.1
 
       - name: Smoke Test
         run: |
