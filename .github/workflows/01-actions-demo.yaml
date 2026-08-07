@@ -1,7 +1,8 @@
 name: 01 - CWVJ Flask CI workflow
 
 on:
-  push:
+#  push:
+  workflow_dispatch:
 
 jobs:
   flask-ci-job:
