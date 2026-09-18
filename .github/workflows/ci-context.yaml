@@ -1,9 +1,0 @@
-name: "Understanding Contexts"
-on: workflow_dispatch
-jobs:
-    event-info-job:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Print Trigger event 
-            run: echo "My trigger event is ${{ github.event_name }}"
-
