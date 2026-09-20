@@ -3,8 +3,8 @@ on:
   push:
 jobs:
   job1:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: first
         runs: echo "First Step"
       - name: second
