@@ -4,9 +4,10 @@ on:
 jobs:
   runs-on: ubuntu-latest
   steps:
-    - name: first
-      runs: echo "First Step"
-    - name: second
-      runs: echo "Second Step"
-    - name: third
-      runs: echo "Third step" 
+    job1:
+      - name: first
+        runs: echo "First Step"
+      - name: second
+        runs: echo "Second Step"
+      - name: third
+        runs: echo "Third step" 
