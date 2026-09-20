@@ -2,9 +2,9 @@ name: Simple_Workflow
 on:
   push:
 jobs:
+  job1:
   runs-on: ubuntu-latest
   steps:
-    job1:
       - name: first
         runs: echo "First Step"
       - name: second
