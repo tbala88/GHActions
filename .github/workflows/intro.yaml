@@ -6,9 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello world
+        id: 1
         run: echo "Hello World"
   Complex:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World
+        id: 2
         run: echo "Hello World1"
