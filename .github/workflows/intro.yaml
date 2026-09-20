@@ -7,3 +7,8 @@ jobs:
     steps:
       - name: Hello world
         run: echo "Hello World"
+  Complex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: echo "Hello World1"
