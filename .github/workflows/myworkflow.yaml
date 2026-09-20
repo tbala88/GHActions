@@ -9,3 +9,10 @@ jobs:
         run: echo "First"
       - name: second
         run: echo "Second"
+  middle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: third 
+        run: echo "Third"
+      - name: fourth
+        run: echo "Fourth"
