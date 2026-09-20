@@ -1,0 +1,8 @@
+name: MyFirstAction
+  on:
+    push:
+  jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Hello World"
