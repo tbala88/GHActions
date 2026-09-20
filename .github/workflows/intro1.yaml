@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first
-        runs: echo "First Step"
+        run: echo "First Step"
       - name: second
-        runs: echo "Second Step"
+        run: echo "Second Step"
       - name: third
-        runs: echo "Third step" 
+        run: echo "Third step" 
