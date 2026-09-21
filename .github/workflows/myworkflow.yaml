@@ -31,11 +31,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Build and push
+          
+     -  name: Build and push ${{ matrix.component }}
         uses: docker/build-push-action@v6
         with:
-          context: .
-          file: ./${{ github.event.inputs.component }}/Dockerfile
+          # This sets the build context to the specific directory
+          context: ./${{ matrix.component }}
+          # The Dockerfile is looked up inside that context
+          file: ./${{ matrix.component }}/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/myquotes-${{ github.event.inputs.component }}:${{ github.event.inputs.tag }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/myquotes-${{ matrix.component }}:${{ github.event.inputs.tag }}
