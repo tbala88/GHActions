@@ -19,6 +19,9 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        component: [frontend, backend, db]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,8 +34,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          
-     -  name: Build and push ${{ matrix.component }}
+
+      - name: Build and push ${{ matrix.component }}
         uses: docker/build-push-action@v6
         with:
           # This sets the build context to the specific directory
