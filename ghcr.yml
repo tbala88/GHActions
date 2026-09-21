@@ -1,0 +1,24 @@
+name: Deploy Images to GHCR
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  push-to-ghcr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: 'Checkout Git Actions'
+        uses: actions/checkout@v4
+      - name: 'Login to Github Container Registry'
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and Push the image
+        run: |
+          docker build . -- ghcr.io/${{ github.repository_owner }}/hello:latest
+          docker push ghcr.io/${{ github.repository_owner }}/hello:test
