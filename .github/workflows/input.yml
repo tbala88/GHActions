@@ -1,0 +1,17 @@
+name: Workflow with the input
+on: 
+  workflow_dispatch:
+    inputs:
+      param1:
+        description: 'Description for param1'
+        required: true
+        default: 'Hello World'
+jobs:
+    run_manual_tasks:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout 
+              uses: actions/checkout@v4
+            - name: Run Manual Task
+              run: |
+                echo "Run task with Param1 ${{ github.event.inputs.param1 }}"
