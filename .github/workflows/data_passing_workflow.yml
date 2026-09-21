@@ -7,19 +7,19 @@ jobs:
       - name: Generate Data
         run: echo "Some data generated in job1 by bala @ `date` " >> data.txt
       - name: Upload data as artifactor
-        uses: actions/upload-artifacts@v2
+        uses: actions/upload-artifact@v2
         with:
-          name: data-artifacts
+          name: data-artifact
           path: data.txt
   job2:
     needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: Download data artifacts
-        uses: actions/download-artifacts@v2
+        uses: actions/download-artifact@v2
         with:
-          name: data-artifacts
+          name: data-artifact
           path: data/
       - name: Use data in job2
-        run: cat data/data/txt
+        run: cat data/data.txt
 
