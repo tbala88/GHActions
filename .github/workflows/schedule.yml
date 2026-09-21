@@ -1,0 +1,11 @@
+name: Scheduled Events 
+on:
+  schedule:
+    - cron: '0/5 * * * *'
+jobs:
+    show-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Info
+              run: |
+                echo "This is a scheduled event on all the branches"
