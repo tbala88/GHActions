@@ -7,8 +7,6 @@ What is GitHub ?
  - CI/CD automation
  - Package management
  - Collobaration
-[![Data Passing Workflow](https://github.com/tbala88/GHActions/actions/workflows/data_passing_workflow.yml/badge.svg)](https://github.com/tbala88/GHActions/actions/workflows/data_passing_workflow.yml)
-
 * Github Actions refers to the entire platform and ecosystem for creating and running automated workflows withing the GitHub environment
 * An action is a script invoked from within a workflow
 * What are workflows?
