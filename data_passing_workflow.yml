@@ -1,12 +1,5 @@
 name: Data Passing Workflow
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'         # Any markdown file (README.md, docs/*.md, etc.)
-      - 'docs/**'       # A docs directory, if you have one
-      - '.gitignore'    # Often useful to ignore too
+on: [push]
 jobs:
   job1:
     runs-on: ubuntu-latest
