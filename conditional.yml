@@ -15,4 +15,4 @@ jobs:
             - name: Info1
               run: |
                 echo "This is a push event on all the branches"
-              if: github.ref == 'refs/heads/test' && github.event_name == 'push'
+              if: github.ref == 'refs/heads/main' && github.event_name == 'push'
