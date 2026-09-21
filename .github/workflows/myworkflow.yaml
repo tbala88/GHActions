@@ -1,9 +1,9 @@
 name: MyFirstWorkflow
 on:
-    push
+    push:
 jobs:
-    runs-on: ubuntu-latest
     job1:
+        runs-on: ubuntu-latest
         steps: 
             - name: My First Step
               run: echo "My first step"
