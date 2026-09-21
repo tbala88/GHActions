@@ -1,18 +1,10 @@
-name: FirstWorkFlow
+name: MyFirstWorkflow
 on:
-  workflow_dispatch:
+    push
 jobs:
-  initial:
     runs-on: ubuntu-latest
-    steps:
-      - name: first
-        run: echo "First"
-      - name: second
-        run: echo "Second"
-  middle:
-    runs-on: ubuntu-latest
-    steps:
-      - name: third 
-        run: echo "Third"
-      - name: fourth
-        run: echo "Fourth"
+    job1:
+        - name: My First Step
+          run: echo "My first step"
+        - name: My Second step
+          run: echo "My Second step"
