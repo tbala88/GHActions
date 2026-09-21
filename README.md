@@ -7,7 +7,6 @@ What is GitHub ?
  - CI/CD automation
  - Package management
  - Collobaration
-
 * Github Actions refers to the entire platform and ecosystem for creating and running automated workflows withing the GitHub environment
 * An action is a script invoked from within a workflow
 * What are workflows?
