@@ -1,0 +1,8 @@
+https://www.youtube.com/watch?v=yc11xPaIHT4&list=PLIpE1hDb3gF2q77kD_V5jLzNktzL09JZM&index=13
+- Enabled CodeQL
+- GitHub Release - https://www.youtube.com/watch?v=HWB_7Jn5fms&list=PLIpE1hDb3gF2q77kD_V5jLzNktzL09JZM&index=17
+
+
+
+https://medium.com/@kittipat_1413/github-actions-certification-exam-complete-review-and-study-tips-208c70ab7a8f
+https://ghcertified.com/en
