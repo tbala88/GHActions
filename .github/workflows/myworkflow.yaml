@@ -8,4 +8,4 @@ jobs:
             - name: My First Step
               run: echo "My first step"
             - name: My Second step
-              run: Echo "My Second step"
+              run: echo "My Second step"
