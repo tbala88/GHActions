@@ -28,4 +28,4 @@ jobs:
         with:
           context: ./${{ matrix.service }}
           push: true 
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/${{ matrix.service }}:${{ inputs.tag }}
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/${{ matrix.service }}::1.0.0
